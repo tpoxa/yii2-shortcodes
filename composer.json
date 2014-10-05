@@ -1,0 +1,21 @@
+{
+    "name": "tpoxa/shorttags",
+    "description": "Wordpress style shorttags support for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "shorttags"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Maksym Trofimenko",
+            "email": "gtpoxa@gmail.com"
+        }
+    ],
+    "require": {
+	   
+    },
+    "autoload": {
+        "psr-4": {
+            "tpoxa\\shorttags\\": ""
+        }
+    }
+}
