@@ -7,8 +7,7 @@ Installation
 ------------
 ```code
 {
-	"require": 
-	{
+	"require": {
   		"tpoxa/shortcodes": "dev-master"
 	}
 }
@@ -27,6 +26,10 @@ Add image component
             'class' => 'tpoxa\shortcodes\Shortcode',
             'callbacks' => [
                 'lastphotos' => ['frontend\widgets\lastPhoto\lastPhoto', 'widget'],
+                'anothercallback'=>function($attrs, $content, $tag){
+                ///
+                },
+                
             ]
         ],
 ```
@@ -42,7 +45,8 @@ echo \Yii::$app->shortcodes->parse('
 
 Additional
 ----
-callbacks array on any valid PHP callbacks
+callbacks  - An array of valid PHP callbacks. Keys should contain names of the shortcodes
+
 lastPhoto example class - Yii2 widget
 
 ```php
