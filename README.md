@@ -50,7 +50,7 @@ callbacks  - An array of valid PHP callbacks. Keys should contain names of the s
 lastPhoto example class - Yii2 widget
 
 ```php
-namespace frontend\widgets\lastPhoto; // your app class
+namespace frontend\widgets\lastPhoto; // your App class
 
 use yii\base\Widget;
 class lastPhoto extends Widget {
