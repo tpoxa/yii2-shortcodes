@@ -1,6 +1,6 @@
 <?php
 
-namespace tpoxa\shorttags;
+namespace tpoxa\shortcodes;
 
 use yii\base\Component;
 
@@ -23,6 +23,7 @@ class Shortcode extends Component {
      * @return string
      */
     public function parse($content) {
+
         $result = $content;
 
         $shortcodes = $this->getShortcodeList($content);
