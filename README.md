@@ -18,7 +18,7 @@ In config file
 ```code
 /config/main.php
 ```
-Add image component
+Add shortcodes component
 ```code
 'components' => array(
         ...
@@ -26,7 +26,7 @@ Add image component
             'class' => 'tpoxa\shortcodes\Shortcode',
             'callbacks' => [
                 'lastphotos' => ['frontend\widgets\lastPhoto\lastPhoto', 'widget'],
-                'anothercallback'=>function($attrs, $content, $tag){
+                'anothershortcode'=>function($attrs, $content, $tag){
                 ///
                 },
                 
@@ -45,9 +45,9 @@ echo \Yii::$app->shortcodes->parse('
 
 Additional
 ----
-callbacks  - An array of valid PHP callbacks. Keys should contain names of the shortcodes
+callbacks  - An array of valid PHP callbacks. Keys should contain names of the shortcodes.
 
-lastPhoto example class - Yii2 widget
+lastPhoto example class - common Yii2 widget
 
 ```php
 namespace frontend\widgets\lastPhoto; // your App class
