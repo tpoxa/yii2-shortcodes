@@ -3,6 +3,9 @@ yii2-shortcodes
 
 Wordpress style shortcodes support for Yii2
 
+Most part of the code taken from https://github.com/Easy-Forex/WordPress-Shortcodes
+
+
 Installation
 ------------
 ```code
