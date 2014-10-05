@@ -1,7 +1,7 @@
 yii2-shortcodes
 ===============
 
-Wordpress style shorttags for Yii2
+Wordpress style shortcodes support for Yii2
 
 Installation
 ------------
