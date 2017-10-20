@@ -56,6 +56,10 @@ class Shortcode extends Component {
         $tag = $m[2];
         $attr = $this->shortcodeParseAtts($m[3]);
 
+        if ($attr === '') {
+            $attr = null;
+        }
+
         if (isset($m[5])) {
             // enclosing tag - extra parameter
             return $m[1] . call_user_func($this->callbacks[$tag], $attr, $m[5], $tag) . $m[6];
